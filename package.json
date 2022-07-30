@@ -1,0 +1,18 @@
+{
+  "name": "momento1",
+  "version": "1.0.0",
+  "description": "Api Momento 1 Peso",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "develop": "nodemon src/index.js"
+  },
+  "author": "Juan Pablo Gomez Henao",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "node": "^18.7.0",
+    "nodemon": "^2.0.19"
+  }
+}
