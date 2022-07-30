@@ -16,7 +16,7 @@ let response={};
 peso_controller.create = (req,res)=>{
     let array_pacientes= req.body.pacientes
 
-    for(let i=0;i<array_pacientes.lenght;i++){}
+    for(let i=0;i<array_pacientes.lenght;i++){
     const paciente = array_pacientes[i];
 
     //calcular peso diferencia
@@ -39,5 +39,10 @@ peso_controller.create = (req,res)=>{
         obj_paciente['gano'] = pesodif;
     }
     }
-    
+
+
+    res.json({peso_dif,peso_perd})
+
 }
+}
+module.exports=peso_controller
